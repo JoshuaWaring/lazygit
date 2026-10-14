@@ -3,6 +3,7 @@
 * [Configuration](./Config.md).
 * [Custom Commands](./Custom_Command_Keybindings.md)
 * [Custom Diff Renderers](./Custom_DiffRenderers.md)
+* [Generated Commit Messages](./Generated_Commit_Messages.md)
 * [Dev docs](./dev)
 * [Keybindings](./keybindings)
 * [Undo/Redo](./Undoing.md)

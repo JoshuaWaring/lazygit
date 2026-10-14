@@ -734,6 +734,10 @@ type TranslationSet struct {
 	CopyCommitHashToClipboard             string
 	CommitHash                            string
 	CommitURL                             string
+	GenerateCommitMessage                 string
+	GenerateCommitMessageFailed           string
+	GenerateCommitMessageSubTitle         string
+	CancelingCommitMessageSubTitle        string
 	PasteCommitMessageFromClipboard       string
 	SurePasteCommitMessage                string
 	CommitMessage                         string
@@ -769,6 +773,7 @@ type TranslationSet struct {
 	ViewCommits                           string
 	MinGitVersionError                    string
 	RunningCustomCommandStatus            string
+	GeneratingCommitMessageStatus         string
 	SubmoduleStashAndReset                string
 	AndResetSubmodules                    string
 	EnterSubmoduleTooltip                 string
@@ -1931,6 +1936,10 @@ func EnglishTranslationSet() *TranslationSet {
 		CommitHash:                               "Commit hash",
 		CommitURL:                                "Commit URL",
 		PasteCommitMessageFromClipboard:          "Paste commit message from clipboard",
+		GenerateCommitMessage:                    "Generate Commit Message",
+		GenerateCommitMessageFailed:              "Generate commit message command failed",
+		GenerateCommitMessageSubTitle:            "Generating commit message {{.spinner}} Press {{.cancelKey}} to cancel",
+		CancelingCommitMessageSubTitle:           "Canceling commit message generation {{.spinner}}",
 		SurePasteCommitMessage:                   "Pasting will overwrite the current commit message, continue?",
 		CommitMessage:                            "Commit message (subject and body)",
 		CommitMessageBody:                        "Commit message body",
@@ -1965,6 +1974,7 @@ func EnglishTranslationSet() *TranslationSet {
 		ViewCommits:                              "View commits",
 		MinGitVersionError:                       "Git version must be at least %s. Please upgrade your git version.",
 		RunningCustomCommandStatus:               "Running custom command",
+		GeneratingCommitMessageStatus:            "Generating commit message",
 		SubmoduleStashAndReset:                   "Stash uncommitted submodule changes and update",
 		AndResetSubmodules:                       "And reset submodules",
 		Enter:                                    "Enter",
